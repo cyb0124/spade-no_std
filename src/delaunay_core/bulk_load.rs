@@ -1,16 +1,14 @@
+use super::{
+    dcel_operations, FixedDirectedEdgeHandle, FixedUndirectedEdgeHandle, FixedVertexHandle,
+};
 use crate::{
     ConstrainedDelaunayTriangulation, HasPosition, HintGenerator, InsertionError, Point2,
     Triangulation, TriangulationExt,
 };
-use core::cmp::{Ordering, Reverse};
-use num_traits::Zero;
-
-use super::{
-    dcel_operations, FixedDirectedEdgeHandle, FixedUndirectedEdgeHandle, FixedVertexHandle,
-};
-
 use alloc::vec;
 use alloc::vec::Vec;
+use core::cmp::{Ordering, Reverse};
+use num_traits::{Float, Zero};
 
 /// An `f64` wrapper implementing `Ord` and `Eq`.
 ///

@@ -20,9 +20,9 @@ std = []
 
 [dependencies]
 smallvec = "1.13"
-robust = "1.1.0"
-num-traits = "0.2"
-hashbrown = "0.14.2"
+robust = { version = "1.1.0", features = ["no_std"] }
+num-traits = { version = "0.2", default-features = false, features = ["libm"] }
+hashbrown = "0.15.0"
 
 [dependencies.serde]
 package = "serde"
@@ -44,7 +44,7 @@ members = ["delaunay_compare"]
 approx = "0.5"
 rand = "0.8.3"
 cgmath = "0.18.0"
-svg = "0.17.0"
+svg = "0.18.0"
 float_next_after = "1"
 image = "0.25.1"
 tiny-skia = "0.11.3"

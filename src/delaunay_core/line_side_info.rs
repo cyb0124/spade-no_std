@@ -1,3 +1,5 @@
+use num_traits::Float;
+
 /// Describes on which side of a line a point lies.
 ///
 /// Created by [DirectedEdgeHandle::side_query](crate::handles::DirectedEdgeHandle::side_query)
